@@ -1,6 +1,6 @@
 import axios from "axios";
 import Image from "next/image";
-import Link from "next/future/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 interface Dragons {
@@ -71,21 +71,21 @@ export function Table () {
                                 {apiData.map (i => (
                                     <tr key={i.id}>
                                         <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                                            <div className="flex items-center">
-                                                <div className="flex-shrink-0 w-10 h-10">
-                                                    {/*<Image className="w-full h-full rounded-full"
-                                                        src=""
+                                           <div className="flex items-center">
+                                                {/*<div className="flex-shrink-0 w-10 h-10">
+                                                    <Image className="w-full h-full rounded-full"
+                                                        src="asdasd"
                                                         alt=""
                                                         layout='fill'
-                                                        />*/}
-                                                </div>
+                                                        >as</Image>
+                                                </div>*/}
                                                     <div className="ml-3">
                                                         <p className="text-gray-900 whitespace-no-wrap">
                                                             {i.name}
                                                         </p>
                                                     </div>
                                                 </div>
-                                        </td>
+                                            </td>
                                         <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                                             <p className="text-gray-900 whitespace-no-wrap">{i.type}</p>
                                         </td>
