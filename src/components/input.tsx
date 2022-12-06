@@ -1,4 +1,5 @@
 import axios from "axios"
+import Link from "next/link"
 import { useState } from "react"
 
 export default function Input () {
@@ -49,6 +50,7 @@ export default function Input () {
                     </div>
                   </div>
                   <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                  <Link href="/">
                     <button
                       type="submit"
                       className="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
@@ -56,6 +58,7 @@ export default function Input () {
                     >
                       Save
                     </button>
+                    </Link>
                   </div>
                 </div>
               </form>
