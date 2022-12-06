@@ -15,7 +15,7 @@ export function Table () {
     const [apiData,setapiData] = useState<Dragons[]>([]);
 
     useEffect(() => {
-        axios.get('http://dragonsguto.herokuapp.com/dragons/find')
+        axios.get('https://dragons-production.up.railway.app/dragons/find')
         .then((getData) => {
             setapiData((getData.data)) //bota aqui o setapiData dps (e dpos getData.data) (antes tava o consolog.() para estudar)
         })

@@ -7,7 +7,7 @@ export default function Input () {
     const [type,setType] = useState ("")
 
     const sendToApi = () => {
-        axios.post('https://dragonsguto.herokuapp.com/dragons/' , {
+        axios.post('https://dragons-production.up.railway.app/dragons/' , {
         name,
         type
         })
